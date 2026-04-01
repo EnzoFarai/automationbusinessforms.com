@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>About Us | Automation Business Forms | Commercial Printing Zimbabwe</title>
+<meta name="description" content="Established in the 1960s, Automation Business Forms is Zimbabwe's premier commercial printing company. Learn about our history, team, and certifications.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+:root {
+  --deep-teal: #00332e;
+  --teal-dark: #00211e;
+  --gold: #c7a45b;
+  --gold-dark: #b58f47;
+  --light-bg: #fefcf8;
+  --warm-gray: #f5f3f0;
+  --charcoal: #2c2c2c;
+  --gray-text: #5a6b66;
+  --border-light: #e8e2d9;
+  --shadow-sm: 0 8px 24px rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.02);
+  --shadow-hover: 0 25px 35px -12px rgba(0,0,0,0.12);
+  --shadow-modal: 0 25px 50px -12px rgba(0,0,0,0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--charcoal);
+  background: #ffffff;
+  line-height: 1.5;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.98);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #003333;
+  line-height: 1.2;
+  font-family: Arial, sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2c3e3a;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2.5px;
+  background: var(--gold);
+  left: 0;
+  bottom: -6px;
+  transition: 0.25s ease;
+  border-radius: 2px;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: var(--gold-dark);
+}
+
+.nav-links a.active {
+  color: var(--gold-dark);
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.page-header {
+  background: linear-gradient(135deg, var(--deep-teal) 0%, #004d42 100%);
+  padding: 80px 60px 60px;
+  text-align: center;
+  color: white;
+}
+
+.page-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.section {
+  padding: 80px 60px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.section-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--teal-dark);
+  margin-bottom: 12px;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: var(--gray-text);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.alt-bg {
+  background: var(--light-bg);
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: var(--gold);
+}
+
+.timeline-item {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: var(--gold);
+  border-radius: 50%;
+  border: 4px solid var(--deep-teal);
+}
+
+.timeline-content {
+  width: calc(50% - 40px);
+  padding: 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-left: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-right: auto;
+}
+
+.timeline-content h3 {
+  font-size: 1.3rem;
+  color: var(--gold-dark);
+  margin-bottom: 8px;
+}
+
+.timeline-content .year {
+  font-weight: 700;
+  color: var(--deep-teal);
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.vision-mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.vm-card {
+  background: white;
+  padding: 40px;
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  transition: transform 0.3s;
+}
+
+.vm-card:hover {
+  transform: translateY(-5px);
+}
+
+.vm-card i {
+  font-size: 48px;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.vm-card h3 {
+  font-size: 1.8rem;
+  color: var(--teal-dark);
+  margin-bottom: 20px;
+}
+
+.vm-card p {
+  color: var(--gray-text);
+  line-height: 1.6;
+}
+
+/* Shareholders Grid with Image Icons */
+.shareholders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.shareholder-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  transition: all 0.3s ease;
+}
+
+.shareholder-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.shareholder-img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--warm-gray);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.shareholder-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shareholder-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--teal-dark);
+  line-height: 1.4;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.team-card {
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  transition: all 0.35s;
+  text-align: center;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.team-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background: var(--warm-gray);
+}
+
+.team-info {
+  padding: 28px;
+}
+
+.team-info h3 {
+  font-size: 1.5rem;
+  color: var(--teal-dark);
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.team-info .title {
+  color: var(--gold-dark);
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.team-info .contact {
+  color: var(--gray-text);
+  font-size: 0.9rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.team-info .contact i {
+  color: var(--gold);
+}
+
+/* Enhanced Contact Button */
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--gold-dark);
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  font-family: inherit;
+  background: white;
+}
+
+.contact-btn i {
+  transition: transform 0.2s ease;
+}
+
+.contact-btn:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--teal-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(199, 164, 91, 0.25);
+}
+
+.contact-btn:hover i {
+  transform: translateX(4px);
+}
+
+/* Facility Stats */
+.facility-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 24px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  color: var(--gray-text);
+  font-weight: 500;
+}
+
+.equipment-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.equip-badge {
+  background: white;
+  padding: 12px 24px;
+  border-radius: 60px;
+  font-weight: 600;
+  color: var(--deep-teal);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.equip-badge i {
+  color: var(--gold);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  background: white;
+  border-radius: 32px;
+  max-width: 500px;
+  width: 90%;
+  padding: 32px;
+  box-shadow: var(--shadow-modal);
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-container {
+  transform: scale(1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.modal-header h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--teal-dark);
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--gray-text);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--charcoal);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+}
+
+.contact-method-group {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.contact-method-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.contact-input-group {
+  display: none;
+}
+
+.contact-input-group.active {
+  display: block;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.modal-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.modal-btn-whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+.modal-btn-email {
+  background: var(--deep-teal);
+  color: white;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.floating-whatsapp i {
+  font-size: 32px;
+  color: white;
+}
+
+footer {
+  background: #001311;
+  color: #b8c9c4;
+  padding: 70px 60px 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 48px;
+  margin-bottom: 56px;
+}
+
+.footer-col h4 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-col a {
+  color: #b8c9c4;
+  text-decoration: none;
+  display: block;
+  margin: 12px 0;
+  transition: 0.2s;
+}
+
+.footer-col a:hover {
+  color: var(--gold);
+  transform: translateX(4px);
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 32px;
+  border-top: 1px solid #2a3a35;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 992px) {
+  .navbar { padding: 15px 28px; }
+  .page-header { padding: 60px 28px 40px; }
+  .page-header h1 { font-size: 36px; }
+  .section { padding: 60px 28px; }
+  .section-header h2 { font-size: 32px; }
+  .vision-mission { grid-template-columns: 1fr; }
+  .timeline::before { left: 20px; }
+  .timeline-dot { left: 20px; }
+  .timeline-content { width: calc(100% - 60px); margin-left: 60px !important; }
+}
+
+@media (max-width: 768px) {
+  .navbar { flex-direction: column; gap: 12px; padding: 16px 20px; }
+  .nav-links { gap: 20px; flex-wrap: wrap; justify-content: center; }
+  .team-grid { grid-template-columns: 1fr; }
+  .logo-text { font-size: 18px; }
+  .logo-img { height: 35px; }
+  .shareholders-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+  .shareholder-img { width: 70px; height: 70px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo.jpg" alt="Automation Business Forms" class="logo-img" onerror="this.style.display='none';">
+      <div class="logo-text">Automation<br>Business Forms</div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Catalog</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+    <h1>About Automation Business Forms</h1>
+    <p>Over six decades of printing excellence in Zimbabwe</p>
+  </div>
+
+  <section class="section">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="year">1960s</span>
+          <h3>Company Founded</h3>
+          <p>Automation Business Forms was established, becoming a well-known name in Zimbabwe's printing industry.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="year">2000</span>
+          <h3>Acquisition by The Feathered Quill</h3>
+          <p>The Feathered Quill (Private) Limited took over ABF from Commercial and Industrial Holdings following restructuring.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="year">Present</span>
+          <h3>Industry Leader</h3>
+          <p>One of Zimbabwe's largest printing operations, serving over 300 customers nationwide with modern equipment and dedicated service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-bg">
+    <div class="section">
+      <div class="vision-mission">
+        <div class="vm-card">
+          <i class="fas fa-eye"></i>
+          <h3>Our Vision</h3>
+          <p>We envision becoming the nation's largest printing company. We are currently looking at expansion possibilities particularly with regards establishing or acquiring a production facility in Harare. We would also like to expand our product mix to incorporate other print related products and acquire ISO certification.</p>
+        </div>
+        <div class="vm-card">
+          <i class="fas fa-bullseye"></i>
+          <h3>Our Mission</h3>
+          <p>We are in a service industry and therefore SERVICE is our prime consideration. Our business is to produce a wide range of printed matter as required by an expanding net of customers at a good price, of appropriate quality and delivered when needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2>Shareholders</h2>
+      <p>Owned by a consortium of investors including management</p>
+    </div>
+    <div class="shareholders-grid">
+      <div class="shareholder-card">
+        <div class="shareholder-img">
+          <img src="images/shareholder-placeholder.svg" alt="Average Investments" onerror="this.src='https://placehold.co/80x80/00332e/c7a45b?text=AI'">
+        </div>
+        <h4>Average Investments (Private) Limited</h4>
+      </div>
+      <div class="shareholder-card">
+        <div class="shareholder-img">
+          <img src="images/shareholder-placeholder2.svg" alt="Corporate Excellence" onerror="this.src='https://placehold.co/80x80/00332e/c7a45b?text=CE'">
+        </div>
+        <h4>Corporate Excellence (Private) Limited</h4>
+      </div>
+      <div class="shareholder-card">
+        <div class="shareholder-img">
+          <img src="images/shareholder-placeholder3.svg" alt="Bleachdale Investments" onerror="this.src='https://placehold.co/80x80/00332e/c7a45b?text=BI'">
+        </div>
+        <h4>Bleachdale Investments (Private) Limited</h4>
+      </div>
+      <div class="shareholder-card">
+        <div class="shareholder-img">
+          <img src="images/shareholder-placeholder4.svg" alt="NRZ Pension Fund" onerror="this.src='https://placehold.co/80x80/00332e/c7a45b?text=NRZ'">
+        </div>
+        <h4>NRZ Contributory Pension Fund</h4>
+      </div>
+      <div class="shareholder-card">
+        <div class="shareholder-img">
+          <img src="images/shareholder-placeholder5.svg" alt="Radar Investments" onerror="this.src='https://placehold.co/80x80/00332e/c7a45b?text=RI'">
+        </div>
+        <h4>Radar Investments (Private) Limited</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-bg">
+    <div class="section">
+      <div class="section-header">
+        <h2>Our Team</h2>
+        <p>Dedicated professionals committed to your printing success</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <img class="team-img" src="images/team-management.jpg" alt="Mr. E. Nherudzo" onerror="this.src='https://placehold.co/400x300/00332e/c7a45b?text=Management'">
+          <div class="team-info">
+            <h3>Mr. E. Nherudzo</h3>
+            <div class="title">Management</div>
+            <div class="contact"><i class="fas fa-phone-alt"></i> +263 771 969 519</div>
+            <button class="contact-btn quote-trigger" data-service="Contact Management - Mr. E. Nherudzo"><i class="fas fa-envelope"></i> Contact →</button>
+          </div>
+        </div>
+        <div class="team-card">
+          <img class="team-img" src="images/team-accounting.jpg" alt="Mrs. S. Moyo" onerror="this.src='https://placehold.co/400x300/00332e/c7a45b?text=Accounting'">
+          <div class="team-info">
+            <h3>Mrs. S. Moyo</h3>
+            <div class="title">Accounting</div>
+            <div class="contact"><i class="fas fa-phone-alt"></i> +263 718 487 706</div>
+            <button class="contact-btn quote-trigger" data-service="Contact Accounting - Mrs. S. Moyo"><i class="fas fa-envelope"></i> Contact →</button>
+          </div>
+        </div>
+        <div class="team-card">
+          <img class="team-img" src="images/team-sales.jpg" alt="Webster Mpofu" onerror="this.src='https://placehold.co/400x300/00332e/c7a45b?text=Sales'">
+          <div class="team-info">
+            <h3>Webster Mpofu</h3>
+            <div class="title">Sales & Marketing</div>
+            <div class="contact"><i class="fas fa-phone-alt"></i> +263 715 433 156</div>
+            <button class="contact-btn quote-trigger" data-service="Contact Sales - Webster Mpofu"><i class="fas fa-envelope"></i> Contact →</button>
+          </div>
+        </div>
+        <div class="team-card">
+          <img class="team-img" src="images/team-sales2.jpg" alt="Mark Mateu Phiri" onerror="this.src='https://placehold.co/400x300/00332e/c7a45b?text=Sales'">
+          <div class="team-info">
+            <h3>Mark Mateu Phiri</h3>
+            <div class="title">Sales & Marketing</div>
+            <div class="contact"><i class="fas fa-phone-alt"></i> +263 776 223 038</div>
+            <button class="contact-btn quote-trigger" data-service="Contact Sales - Mark Mateu Phiri"><i class="fas fa-envelope"></i> Contact →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2>Our Facility</h2>
+      <p>State-of-the-art production facility in Bulawayo</p>
+    </div>
+    <div class="facility-stats">
+      <div class="stat-item">
+        <div class="stat-number">4,000</div>
+        <div class="stat-label">sqm Factory Space</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">25</div>
+        <div class="stat-label">Permanent Staff</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Tonnes Paper/Month</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3-6</div>
+        <div class="stat-label">Months Stock Holding</div>
+      </div>
+    </div>
+    <div class="equipment-grid">
+      <span class="equip-badge"><i class="fas fa-print"></i> 3 Multicolour Web Machines</span>
+      <span class="equip-badge"><i class="fas fa-cogs"></i> 8 Sheet-fed Offset Machines</span>
+      <span class="equip-badge"><i class="fas fa-cut"></i> Guillotines & Collators</span>
+      <span class="equip-badge"><i class="fas fa-layer-group"></i> Finishing Equipment</span>
+    </div>
+  </section>
+</main>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/263771969519?text=Hello%20ABF%2C%20I'm%20interested%20in%20your%20printing%20services." target="_blank" class="floating-whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+<!-- Modal -->
+<div id="quoteModal" class="modal-overlay">
+  <div class="modal-container">
+    <div class="modal-header"><h3>Contact Us</h3><button class="modal-close">&times;</button></div>
+    <form id="quoteForm">
+      <div class="form-group"><label>Full Name *</label><input type="text" id="fullName" required></div>
+      <div class="form-group"><label>Contact Method</label><div class="contact-method-group"><label><input type="radio" name="contactMethod" value="email" checked> Email</label><label><input type="radio" name="contactMethod" value="whatsapp"> WhatsApp</label></div></div>
+      <div class="form-group contact-input-group active" id="emailGroup"><input type="email" id="contactEmail" placeholder="Your email address"></div>
+      <div class="form-group contact-input-group" id="whatsappGroup"><input type="tel" id="contactPhone" placeholder="WhatsApp number (with country code)"></div>
+      <div class="form-group" id="serviceGroup"><label>Regarding</label><input type="text" id="serviceField" readonly style="background:#f5f3f0;"></div>
+      <div class="form-group"><label>Message</label><textarea id="requestDetails" rows="3" placeholder="Your message..."></textarea></div>
+      <div class="modal-buttons"><button type="button" id="sendEmailBtn" class="modal-btn modal-btn-email"><i class="fas fa-envelope"></i> Send via Email</button><button type="button" id="sendWhatsAppBtn" class="modal-btn modal-btn-whatsapp"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button></div>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col"><h4>Automation Business Forms</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="products.html">Product catalog</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Contact info</h4><a href="tel:+2632922471017">+263 29 224 71017</a><a href="tel:+2632922460521">+263 29 246 0521</a><a href="https://wa.me/263771969519" target="_blank">+263 771 969 519</a><a href="mailto:sales@abf.co.zw">sales@abf.co.zw</a></div>
+    <div class="footer-col"><h4>Location</h4><a href="#">No. 9 Wolverhampton Road</a><a href="#">Donnington, Belmont</a><a href="#">Bulawayo, Zimbabwe</a></div>
+    <div class="footer-col"><h4>Bankers</h4><a href="#">First Capital Bank</a><a href="#">CBZ Bank</a></div>
+  </div>
+  <div class="copyright"><p>© 2025 Automation Business Forms — The Feathered Quill (Pvt) Ltd. All rights reserved.</p></div>
+</footer>
+
+<script>
+const modal = document.getElementById('quoteModal');
+const modalClose = document.querySelector('.modal-close');
+const quoteTriggers = document.querySelectorAll('.quote-trigger');
+
+function openModal(service) {
+  const serviceField = document.getElementById('serviceField');
+  const serviceGroup = document.getElementById('serviceGroup');
+  
+  if (service && service.trim() !== '') {
+    serviceField.value = service;
+    serviceGroup.style.display = 'block';
+  } else {
+    serviceField.value = '';
+    serviceGroup.style.display = 'none';
+  }
+  
+  document.getElementById('fullName').value = '';
+  document.getElementById('contactEmail').value = '';
+  document.getElementById('contactPhone').value = '';
+  document.getElementById('requestDetails').value = '';
+  document.querySelector('input[name="contactMethod"][value="email"]').checked = true;
+  toggleContactInputs();
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+quoteTriggers.forEach(trigger => {
+  trigger.addEventListener('click', (e) => {
+    e.preventDefault();
+    const service = trigger.getAttribute('data-service') || '';
+    openModal(service);
+  });
+});
+
+modalClose.addEventListener('click', closeModal);
+modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('active')) closeModal(); });
+
+function toggleContactInputs() {
+  const method = document.querySelector('input[name="contactMethod"]:checked').value;
+  const emailGroup = document.getElementById('emailGroup');
+  const whatsappGroup = document.getElementById('whatsappGroup');
+  if (emailGroup) emailGroup.classList.toggle('active', method === 'email');
+  if (whatsappGroup) whatsappGroup.classList.toggle('active', method === 'whatsapp');
+}
+
+const radioButtons = document.querySelectorAll('input[name="contactMethod"]');
+if (radioButtons.length) {
+  radioButtons.forEach(radio => radio.addEventListener('change', toggleContactInputs));
+}
+
+function getFormData() {
+  const name = document.getElementById('fullName').value.trim();
+  if (!name) { alert('Please enter your full name'); return null; }
+  const method = document.querySelector('input[name="contactMethod"]:checked').value;
+  let contact = '';
+  if (method === 'email') contact = document.getElementById('contactEmail').value.trim();
+  else contact = document.getElementById('contactPhone').value.trim();
+  if (!contact) { alert(`Please enter your ${method === 'email' ? 'email' : 'WhatsApp number'}`); return null; }
+  const service = document.getElementById('serviceField') ? document.getElementById('serviceField').value.trim() : '';
+  let details = document.getElementById('requestDetails').value.trim();
+  if (!service && !details) { alert('Please provide details about your request'); return null; }
+  return { name, contact, method, service, details: details || (service ? `Inquiry about ${service}` : '') };
+}
+
+function formatWhatsAppMessage(data) {
+  let message = `Hello ABF, I'm interested in your printing services.%0A%0A`;
+  message += `*Name:* ${encodeURIComponent(data.name)}%0A`;
+  message += `*Contact (${data.method === 'email' ? 'Email' : 'WhatsApp'}):* ${encodeURIComponent(data.contact)}%0A`;
+  if (data.service) message += `*Regarding:* ${encodeURIComponent(data.service)}%0A`;
+  message += `*Message:* ${encodeURIComponent(data.details)}`;
+  return message;
+}
+
+const sendEmailBtn = document.getElementById('sendEmailBtn');
+const sendWhatsAppBtn = document.getElementById('sendWhatsAppBtn');
+
+if (sendEmailBtn) {
+  sendEmailBtn.addEventListener('click', () => {
+    const data = getFormData();
+    if (!data) return;
+    const subject = `Inquiry: ${data.service || 'General Inquiry'}`;
+    const body = `Name: ${data.name}\nContact (${data.method}): ${data.contact}\n${data.service ? `Regarding: ${data.service}\n` : ''}Message: ${data.details}`;
+    window.location.href = `mailto:sales@abf.co.zw?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    closeModal();
+  });
+}
+
+if (sendWhatsAppBtn) {
+  sendWhatsAppBtn.addEventListener('click', () => {
+    const data = getFormData();
+    if (!data) return;
+    const message = formatWhatsAppMessage(data);
+    window.open(`https://wa.me/263771969519?text=${message}`, '_blank');
+    closeModal();
+  });
+}
+</script>
+</body>
+</html>
